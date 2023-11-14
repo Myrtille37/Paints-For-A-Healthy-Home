@@ -10,5 +10,71 @@
     padding: 0 15px;
     margin: 0 auto;
     }
-   
+    .main1{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    }
+    .header{
+        position: absolute;
+    }
+    .header__nav{
+       display: flex;
+       flex-direction: row;
+       list-style: none;
+       width: 1183px;
+       justify-content: space-around;
+       color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 11.667px; /* 116.667% */
+text-transform: uppercase;
+margin-top: 23px;
+
+    }
+    .about{
+        /* position: relative; */
+        display: grid;
+        grid-template-columns: 50% 1fr 1fr;
+        grid-template-rows: 50% 1fr 1fr 1fr 1fr;
+        width: 1183px;
+        height: 783px;
+       
+    }
+   .h1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+   }
+   .main__button-shop_our_colors{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:3;
+   }
+   .main__cookies{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:4;
+   }
+   .main__cookies-button-manage{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end:5;
+   }
+   .main__cookies-button-accept{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end:5;
+   }
     
