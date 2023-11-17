@@ -1,3 +1,6 @@
+*{
+    outline: 1px solid grey;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
     }
     
     .container {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -15,28 +18,57 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     z-index: -1;
+}
+    .main__foto{
+width: 100vw;
     }
     .header{
         position: absolute;
     }
     .header__nav{
-       display: flex;
-       flex-direction: row;
-       list-style: none;
-       width: 1183px;
-       justify-content: space-around;
-       color: #FFF;
+        /* display: flex;
+        flex-direction: row; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr   1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header__nav-paints" "header__nav-samples" "header__nav-gallery" "header__nav-FAQ" "" "header__nav-calculator" "header__nav-log_in" "header__nav-cart" "header__nav-0";
+        list-style: none;
+        /* width: 100vw; */
+        justify-content: space-around;
+        justify-items: start;
+        color: #FFF;
 font-family: Roboto;
 font-size: 10px;
 font-style: normal;
 font-weight: 400;
 line-height: 11.667px; /* 116.667% */
 text-transform: uppercase;
-margin-top: 23px;
+margin-top: 23px;}
 
-    }
+.header__nav-calculator,.header__nav-log_in,.header__nav-cart,.header__nav-0{
+    justify-self: center;
+
+}  
+.header__nav-paints{
+    width: 42px;
+    margin-left: 8px;
+}.header__nav-samples{
+    width: 48px;
+    margin-left: 77px;
+}
+.header__nav-galler{
+    width: 48px;
+    gap: 16px;
+}
+.header__nav-FAQ{
+    width: 20px;
+    margin-left: 230px;
+}
+.header__nav-calculator{
+    width: 70px;
+    gap:16px;
+}
     .about{
         /* position: relative; */
         display: grid;
@@ -44,37 +76,105 @@ margin-top: 23px;
         grid-template-rows: 50% 1fr 1fr 1fr 1fr;
         width: 1183px;
         height: 783px;
-       
+        
     }
-   .h1{
+    .h1{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
-   }
-   .main__button-shop_our_colors{
+    color: #FFF;
+font-family: Roboto;
+font-size: 63px;
+font-style: normal;
+font-weight: 400;
+line-height: 65.625px; /* 104.167% */
+width: 410px;
+margin-left: 42px;
+margin-top: 104px;
+    }
+    .main__button-shop_our_colors{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end:3;
-   }
-   .main__cookies{
+    width: 200px;
+    margin-left: 42px;
+    gap: 36px;
+height: 37px;
+flex-shrink: 0;
+border-radius: 4.167px;
+border: 1px solid #1F1E1E;
+background: #1F1E1E;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 9.167px; /* 101.852% */
+text-transform: uppercase;
+
+    }
+    .main__cookies{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end:4;
-   }
-   .main__cookies-button-manage{
+    }
+    .main__cookies-title{
+        color: #3C3C3C;
+font-family: Roboto;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.25px; /* 147.727% */
+text-transform: uppercase;
+margin-right: 16px;
+    }
+    .main__cookies-text{
+        color: #3C3C3C;
+        font-family: Roboto;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.75px; /* 152.778% */
+        text-transform: uppercase; 
+        width: 286px;
+        height: 55px; 
+        margin-right:13.75px; 
+    }
+    .main__cookies-button-manage{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end:5;
-   }
-   .main__cookies-button-accept{
+    color: #1F1E1E;
+text-align: center;
+font-family: Roboto;
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+width: 37px;
+height: 9px;
+    }
+    .main__cookies-button-accept{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end:5;
-   }
+    color: #1F1E1E;
+text-align: center;
+font-family: Roboto;
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+width: 35px;
+height: 9px;
+    }
     
