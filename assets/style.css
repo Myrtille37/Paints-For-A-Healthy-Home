@@ -433,7 +433,6 @@ width: 330px;
     font-weight: 400;
     line-height: 9.167px;
     text-transform: uppercase;
-   
 }
 .try__our__sticker_main_path{
     display: flex;
@@ -449,4 +448,86 @@ width: 330px;
     width: 546px;
 height: 546px;
 flex-shrink: 0;
+}
+.put__some__colours__into__your__life{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 135px;
+    gap: 8px;
+}
+.put__some__colours__into__your__life_image1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+.put__some__colours__into__your__life_image2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.put__some__colours__into__your__life_image3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.put__some__colours__into__your__life_image4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.put__some__colours__into__your__life_main_path{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 8.333px;
+    background: #C6BC8A; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.put__some__colours__into__your__life_text1{
+    color: #425E44;
+text-align: center;
+font-family: Roboto;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 58.333px; /* 112.179% */
+width: 414px;
+padding-top: 120px;
+}
+.put__some__colours__into__your__life_text2{
+    color: #425E44;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20.833px; /* 104.166% */
+width: 121px;
+}
+.put__some__colours__into__your__life_text3{
+    color: #425E44;
+text-align: center;
+font-family: Roboto;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 13.75px; /* 152.778% */
+text-transform: uppercase;
+width: 263px;
+}
+.put__some__colours__into__your__life_img_1,.put__some__colours__into__your__life_img_2,.put__some__colours__into__your__life_img_3,.put__some__colours__into__your__life_img_4{
+    position: absolute;
+    z-index: 1;
+    margin: 60px 60px;
+/* width:100px;
+height:100px */
 }
