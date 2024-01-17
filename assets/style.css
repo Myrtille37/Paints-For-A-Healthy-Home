@@ -399,5 +399,54 @@ font-style: normal;
 font-weight: 400;
 line-height: 9.167px;
 text-transform: uppercase;
+}
+.try__our__sticker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
 
+}
+.try__our__sticker_text{
+    color: #1F1E1E;
+text-align: center;
+font-family: Roboto;
+font-size: 46px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 108.696% */
+width: 330px;
+/* padding-top: 139px; */
+}
+.try__our__sticker_button{
+    height: 37px;
+    width: 139px;
+    flex-shrink: 0;
+    border-radius: 4.167px;
+    border: 1px solid #1F1E1E;
+    background: #1F1E1E;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 9.167px;
+    text-transform: uppercase;
+   
+}
+.try__our__sticker_main_path{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 546px;
+    height: 546px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.try__our__sticker_img{
+    width: 546px;
+height: 546px;
+flex-shrink: 0;
 }
