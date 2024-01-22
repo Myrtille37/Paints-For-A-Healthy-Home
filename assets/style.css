@@ -403,8 +403,9 @@ text-transform: uppercase;
 .try__our__sticker{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-items: stretch;
     padding-top: 50px;
+    gap: 8px;
 
 }
 .try__our__sticker_text{
@@ -530,4 +531,97 @@ width: 263px;
     margin: 60px 60px;
 /* width:100px;
 height:100px */
+}
+.sign__up{
+    display: grid;
+    grid-template-columns:70% 1fr 1fr 1fr;
+    grid-template-rows: repeat(5 1fr);
+    padding-top: 117px;
+    padding-bottom: 65px;
+}
+.sign__up_text{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: #1F1E1E;
+font-family: Roboto;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: 45.833px; /* 120.614% */
+margin-bottom: 8px;
+}
+.sign__up_shop{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4; 
+    color: #3C3C3C;
+font-family: Roboto;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 13.75px; /* 152.778% */
+text-transform: uppercase;
+/* width: 24px; */
+display: flex;
+flex-direction: column;
+margin-bottom: 12px;
+gap: 6px;
+}
+.sign__up_discover{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    color: #3C3C3C;
+font-family: Roboto;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 13.75px; /* 152.778% */
+text-transform: uppercase;
+/* width: 47px;   */
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+.sign__up_about{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4; 
+    color: #3C3C3C;
+font-family: Roboto;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 13.75px; /* 152.778% */
+text-transform: uppercase; 
+/* width: 30px; */
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+.sign__up_input{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+.sign__up_input_text{
+    border-radius: 4.167px;
+    border: 1px solid #E0E0E0; 
+    width: 267px;
+    height: 37px;
+    flex-shrink: 0; 
+}
+.sign__up_input_button{
+    width: 13px;
+height: 15px;
+flex-shrink: 0;
+}
+.sign__up_shop_Shop,.sign__up_discover_Discover,.sign__up_about_About{
+    margin-bottom: 11px;
 }
