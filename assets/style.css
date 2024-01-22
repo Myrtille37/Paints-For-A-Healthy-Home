@@ -1,6 +1,6 @@
-*{
+/* *{
     outline: 1px solid grey;
-}
+} */
 * {
     margin: 0;
     padding: 0;
@@ -618,8 +618,8 @@ gap: 6px;
     flex-shrink: 0; 
 }
 .sign__up_input_button{
-    width: 13px;
-height: 15px;
+width: 17px;
+height: 18px;
 flex-shrink: 0;
 }
 .sign__up_shop_Shop,.sign__up_discover_Discover,.sign__up_about_About{
